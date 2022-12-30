@@ -1,0 +1,113 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPl/fX32zYu6aDkA/UexwaM",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Kim-Cheomji/-/blob/main/%EB%82%A0%EC%A7%9C%20%EA%B3%84%EC%82%B0%20(F-string%20%EC%97%B0%EC%8A%B5)\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "날짜 = int(input(\"계산하고 싶은 날짜를 입력하세요(ex:10일 뒤 = 10): \"))\n",
+        "print(날짜)\n",
+        "\n",
+        "import datetime\n",
+        "start_date = datetime.datetime.today()\n",
+        "d_day = 날짜\n",
+        "target_date = start_date + datetime.timedelta(d_day)\n",
+        "\n",
+        "print(f\"start date: {start_date}\")\n",
+        "print(f\"d-day: {d_day}\")\n",
+        "print(f\"target date: {target_date}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Q8AbO6siUjQV",
+        "outputId": "3eb0eaef-c080-4a0b-b3b2-140ec355d223"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "계산하고 싶은 날짜를 입력하세요(ex:10일 뒤 = 10): 2100\n",
+            "2100\n",
+            "start date: 2022-12-30 06:28:32.516596\n",
+            "d-day: 2100\n",
+            "target date: 2028-09-29 06:28:32.516596\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "month = 1\n",
+        "while month <= 12:\n",
+        "    print(f'2020년 {month}월')\n",
+        "    month = month + 1"
+      ],
+      "metadata": {
+        "id": "ssromwivt44U",
+        "outputId": "9e80904a-c2da-42fe-8da1-231cbf967993",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2020년 1월\n",
+            "2020년 2월\n",
+            "2020년 3월\n",
+            "2020년 4월\n",
+            "2020년 5월\n",
+            "2020년 6월\n",
+            "2020년 7월\n",
+            "2020년 8월\n",
+            "2020년 9월\n",
+            "2020년 10월\n",
+            "2020년 11월\n",
+            "2020년 12월\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "wAWTUJqet5u2"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
